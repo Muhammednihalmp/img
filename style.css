@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 0 10px;
+}
+.container {
+    margin-top: 50px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="file"] {
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"]:hover {
+    background-color: darkorange;
+}
+.hidden {
+    display: none;
+}
+.response-message {
+    margin-top: 20px;
+}
+#uploadedImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin-top: 30px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="file"],
+    input[type="submit"] {
+        padding: 8px;
+        margin: 8px 0;
+    }
+    #uploadedImage {
+        max-width: 100%;
+    }
+}
